@@ -82,13 +82,13 @@ zcat /usr/share/zabbix/sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psq
 
 ### Решение 2
 
-#sudo -s
-#wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.4+ubuntu22.04_all.deb
-#dpkg -i zabbix-release_latest_7.4+ubuntu22.04_all.deb
-#apt update
-apt install zabbix-agent
-systemctl restart zabbix-agent
-systemctl enable zabbix-agent
+   sudo -s
+   wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.4+ubuntu22.04_all.deb
+   dpkg -i zabbix-release_latest_7.4+ubuntu22.04_all.deb
+   apt update
+   apt install zabbix-agent
+   systemctl restart zabbix-agent
+   systemctl enable zabbix-agent
 
 ![](image/image3.png)
 
