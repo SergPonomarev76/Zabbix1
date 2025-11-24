@@ -43,7 +43,6 @@
 
 
 ### Решение 1 
-
 sudo apt update && sudo apt upgrade -y
 sudo apt install postgresql -y
 sudo systemctl enable postgresql
